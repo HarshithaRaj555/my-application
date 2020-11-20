@@ -1,0 +1,36 @@
+.header {
+    
+    height: 100px;
+    width: 1440px;
+    opacity: 0.98;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.14);
+ 
+    img {
+        height: 54px;
+        width: 280px;
+        margin: 15px 1030px 10px 100px;
+    }
+    p {
+        margin-left: 1200px;
+        position: absolute;
+        margin-top: -48px;
+        font-size: 16px;
+    }
+
+}
+
+
+.image {
+    
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background: url('https://tse3.mm.bing.net/th?id=OIP.R4LzYJEq5wTChLkEvoeMZwHaHa&pid=Api&P=0&w=300&h=300');
+        background-size: 120%;
+        margin-left: 1280px;
+        margin-top: -57px;
+        border: 2px solid #D92756;
+}
+
+
