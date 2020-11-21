@@ -1,5 +1,6 @@
 <h1>Add/Remove Super Admins</h1>
 
+
 <div class="details">
 <mat-form-field appearance="outline" style="width: 180px;">
     <mat-label>Enter Name </mat-label>
@@ -19,8 +20,8 @@
             </mat-form-field>
             </div>
             <button class="button">+</button>
-            <button type="button" class="close" routerLink="/policy" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-             </button>
+             
                  
-            
+             <div mat-dialog-actions>
+                <button class="close" mat-button mat-dialog-title (click)="closeDialog()">X</button>
+              </div>  

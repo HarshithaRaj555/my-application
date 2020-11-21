@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
+import { DetailspageComponent } from '../detailspage/detailspage.component';
 
 @Component({
   selector: 'app-admin2',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Admin2Component implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<Admin2Component>) { }
 
   ngOnInit(): void {
+  }
+  closeDialog() {
+    this.dialogRef.close();
   }
 
 }
