@@ -14,6 +14,7 @@ const routes: Routes = [
   {path:'pass', component:PasswordComponent},
   {path:'change-password',component:ChangepasswordComponent},
   {path:'policy-page',component:DetailspageComponent},
+  {path:'policy',component:DetailspageComponent},
   
 ];
 

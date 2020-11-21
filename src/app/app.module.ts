@@ -20,6 +20,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AdminComponent } from './admin/admin.component';
+import { Admin2Component } from './admin2/admin2.component';
+
 
 
 
@@ -38,6 +42,8 @@ import {MatIconModule} from '@angular/material/icon';
     Details2Component,
     PasswordComponent,
     ChangepasswordComponent,
+    AdminComponent,
+    Admin2Component,
     
     
     
@@ -54,6 +60,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatNativeDateModule,
     MatButtonModule,
     MatIconModule,
+    MatDialogModule,
     
   
   ],

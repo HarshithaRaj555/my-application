@@ -99,12 +99,15 @@
                     <div routerLink="/change-password" class="display">
                         Change Password
                     </div>
-                    <div class="display">
-                        Add/Remove Super Admins
-                    </div>
-                    <div class="display">
-                        Add/Remove Admins
-                    </div>
+                    
+                        
+                        <div class="display1">
+                        <button mat-raised-button (click)="openDialog()">Add/Remove Super Admins</button>
+                        </div>
+                    
+                        <div class="display1">
+                          <button mat-raised-button (click)="openDialog1()">Add/Remove Admins</button>
+                          </div>
                 </span>
                 <div class="fab-button-container p-4" (click)="toggleOverlayMode()">
                     <button mat-fab class="fab-button" aria-label="Example icon button with a delete icon">
@@ -113,4 +116,5 @@
                 </div>
             </div>
             <div class="overlay" [hidden]="!overlay"></div>  
+            
  </div>

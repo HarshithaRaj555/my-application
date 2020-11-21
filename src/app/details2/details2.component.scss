@@ -316,6 +316,9 @@
       
 
       .display {
+        
+          
+        
           border-radius: 24px;
           background-color: #FCF4F6; 
           width: 194.6px;
@@ -351,7 +354,33 @@
   cursor: pointer;
 }
 
-
+.display1 {
+  
+    button{
+     
+          background-color: #FCF4F6; 
+          width: 194.6px;
+          height: 33.6px;
+          border-radius: 24px;
+          margin: 0.5em;
+          margin-bottom: 1.5em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #D92756;
+          font-family: Roboto;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.88px;
+          line-height: 11.2px;
+          text-align: center;
+          outline: none;
+          cursor: pointer;
+    
+    
+  
+    }
+}
 
 
 

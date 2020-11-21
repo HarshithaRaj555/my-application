@@ -1,0 +1,36 @@
+h1 {
+    margin-top: 38px;
+    margin-left: 40px;
+}.details {
+    display: inline-flex;
+    margin-left: 40px;
+    mat-form-field {
+      margin-top: 12px;
+    }
+   
+    
+    mat-label {
+      font-size: 16px;
+    }
+}
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #D92756;
+    color:#FFFF;
+    font-size: 20px;
+    border: none;
+    margin-left: 18px;
+    box-shadow: 2px 2px 8px palevioletred;
+    margin-right: 90px;
+    
+}
+.close{
+    margin-top: -100px;
+    font-size: 45px;
+    margin-right: -12px;
+    &:focus {
+        outline: none;
+    }
+}
