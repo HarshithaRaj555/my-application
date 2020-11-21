@@ -1,9 +1,8 @@
-
 import {Details} from './Details';
 export const DETAILS : Details[] = [
     {
         name: 'Kevin',
-        employeeID:'RT12345',
+        employeeID:'RT1234',
         mailID :'kevin@robosoftin.com'
     },
 
@@ -16,4 +15,3 @@ export const DETAILS : Details[] = [
     
 
 ];
-

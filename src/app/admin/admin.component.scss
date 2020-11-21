@@ -16,6 +16,7 @@ h1 {
 
 .close{
     margin-top: -690px;
+    position: absolute;
     font-size: 25px;
     margin-left: 900px;
     padding-left: 60px;
@@ -26,7 +27,7 @@ h1 {
 }
 .details-form {
     mat-form-field {
-margin-left: 20px;
+margin-left: 28px;
     }
 }
 
@@ -39,9 +40,9 @@ margin-left: 20px;
     color:#FFFF;
     font-size: 20px;
     border: none;
-    margin-left: 20px;
+    margin-left: 40px;
     box-shadow: 2px 2px 8px palevioletred;
-    margin-right: 70px;
+    margin-right: 60px;
     
 
   
@@ -66,3 +67,65 @@ margin-left: 20px;
   }
 }
 }
+.line {
+    box-sizing: border-box;
+    height: 2px;
+    width: 1034px;
+    border: 1px dashed #A2A2A2;
+    opacity: 0.6;
+  }
+  .update {
+    height: 49px;
+    width: 129px;
+    background-color: #D92756;
+    border: none;
+    border-radius: 30px;
+    margin-left: 700px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 8px palevioletred;
+    &:focus {
+        outline: none;
+    }
+}
+.cancel {
+    height: 49px;
+    width: 129px;
+    background-color: #D92756;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 8px palevioletred;
+    &:focus {
+        outline: none;
+    }
+}
+.fab-button {
+    background-color:#D92756 ;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 8px palevioletred;
+} 
+.name {
+    width: 250px;
+    height: 60px;
+    border: 1.5px solid #9E9E9E;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
