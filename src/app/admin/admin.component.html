@@ -5,15 +5,15 @@
 <div class="details-form">
     <mat-form-field appearance="outline" style="width: 190px;">
         <mat-label>Enter Name </mat-label>
-        <input matInput [(ngModel)]="details.name" placeholder="Enter Name" type="text">   
+        <input matInput [(ngModel)]="details.name" placeholder="Enter Name" type="text" >   
      </mat-form-field>
      <mat-form-field appearance="outline" style="width: 190px;">
         <mat-label>Enter Employee ID </mat-label>
-        <input matInput [(ngModel)]="details.employeeID" placeholder="Enter Employee ID" type="text">   
+        <input matInput [(ngModel)]="details.employeeID" placeholder="Enter Employee ID" type="text" >   
      </mat-form-field> 
      <mat-form-field appearance="outline" style="width: 300px;">
         <mat-label>Enter Mail ID</mat-label>
-        <input matInput [(ngModel)]="details.mailID" placeholder="Enter Mail ID" type="text">   
+        <input matInput [(ngModel)]="details.mailID" placeholder="Enter Mail ID" type="text" >   
      </mat-form-field> 
     
   
@@ -47,7 +47,7 @@
   <div mat-dialog-actions>
     <button class="close" mat-button mat-dialog-title (click)="closeDialog()">X</button>
   </div> 
-  <button class="update" (click)="closeDialog()">
+  <button class="update" >
     Update
   </button>
   <button class="cancel" (click)="closeDialog()">

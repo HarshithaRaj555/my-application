@@ -16,6 +16,7 @@ export class AdminComponent implements OnInit {
     mailID: ''
     
   };
+  
 
   deleteDetails(details: Details): void {
     this.detailsList.forEach((item, index) => {
@@ -39,5 +40,5 @@ export class AdminComponent implements OnInit {
      closeDialog() {
        this.dialogRef.close();
      }
-
+     
 }

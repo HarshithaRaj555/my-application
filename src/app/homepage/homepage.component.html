@@ -4,17 +4,20 @@
     <div class="credentials">
         
         <h6>Login</h6>
-            
+        <form [formGroup]="authService.form">
         <div class="input1">
             <mat-form-field appearance="outline">
               <mat-label>Enter Username</mat-label>
-              <input matInput placeholder="Enter Username" value=""/>
+              <input matInput placeholder="Enter Username" name="username" value=""/> 
+              
+                
               </mat-form-field>
            </div>   
         <div class="input2">
          <mat-form-field appearance="outline">
               <mat-label>Enter Password</mat-label>
               <input matInput placeholder="Enter Password" name="password" value=""/>
+              
          </mat-form-field>
          </div>
       
@@ -27,7 +30,7 @@
          <div class="password" routerLink="/pass">
         <p>Forgot Password?</p>
          </div>
-      
+      </form>
     </div>
 </div>
   

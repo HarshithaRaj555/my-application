@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule,  } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +23,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AdminComponent } from './admin/admin.component';
 import { Admin2Component } from './admin2/admin2.component';
+import { MaterialFileInputModule } from 'ngx-material-file-input';
+import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
+
+
+
 
 
 
@@ -47,6 +53,7 @@ import { Admin2Component } from './admin2/admin2.component';
     
     
     
+    
    
   ],
   imports: [
@@ -61,10 +68,14 @@ import { Admin2Component } from './admin2/admin2.component';
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
+    MaterialFileInputModule,
+    ReactiveFormsModule
+    
+    
     
   
   ],
-  providers: [],
+  providers: [AuthGuard,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
