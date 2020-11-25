@@ -37,31 +37,34 @@
       <mat-datepicker-toggle matSuffix class="icon-pink" [for]="picker1"></mat-datepicker-toggle>
       <mat-datepicker #picker1></mat-datepicker>
     </mat-form-field>
+
     <mat-form-field appearance="outline">
       <mat-label>Select End Date</mat-label>
       <input matInput [matDatepicker]="picker2">
       <mat-datepicker-toggle matSuffix class="icon-pink" [for]="picker2"></mat-datepicker-toggle>
       <mat-datepicker #picker2></mat-datepicker>
     </mat-form-field>
+
     <mat-form-field appearance="outline">
       <mat-label>Auto Reminder</mat-label>
-      <input matInput placeholder="Auto Reminder" type="number" name="date" value="" />
+      <input matInput placeholder="Auto Reminder" type="number"/>
       <div class="days">
-        <input matInput placeholder="Check box text" name="date" value="Days" />
+        <input matInput placeholder="Check box text" value="Days" />
       </div>
     </mat-form-field>
   </div>
+
   <div class="file">
     <mat-form-field appearance="outline">
       <mat-label>Select content PPT File</mat-label>
-      <ngx-mat-file-input></ngx-mat-file-input>
+      <ngx-mat-file-input [multiple]= false [accept]= " '.ppt,.pptx '"></ngx-mat-file-input>
       <mat-icon matSuffix class="icon-color">cloud_upload</mat-icon>
 
 
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Select participant xl sheet</mat-label>
-      <ngx-mat-file-input></ngx-mat-file-input>
+      <ngx-mat-file-input [multiple]= false [accept]= " '.xls,.xlsx '"></ngx-mat-file-input>
       <mat-icon matSuffix class="icon-color">cloud_upload</mat-icon>
 
 
@@ -94,7 +97,7 @@
     </button>
     <button class="box4">
       <img src="../../assets/ic_report.png" alt="">
-      <h6>GENRATE REPORT</h6>
+      <h6>GENERATE REPORT</h6>
     </button>
   </div>
 

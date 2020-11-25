@@ -1,37 +1,30 @@
-
 <div class="robosoft">
 
-    <div class="credentials">
-     
-        <h6>Login</h6>
-        <form [formGroup]="userForm">
-        <div class="input1">
-            <mat-form-field appearance="outline">
-              <mat-label>Enter Username</mat-label>
-              <input matInput formControlName="username" placeholder="Enter Username"> 
-              
-                
-              </mat-form-field>
-           </div>   
-        <div class="input2">
-         <mat-form-field appearance="outline">
-              <mat-label>Enter Password</mat-label>
-              <input matInput formControlName="password" placeholder="Enter Password" type="password">
-              
-         </mat-form-field>
-         </div>
-      
-    
-         <button class="login-button" type="submit" mat-raised-button (click)="authenticate()" routerLinkActivate="active">
-            <span class="login-text">Login</span>
-          </button>
-     
-      
-         <div class="password" routerLink="/pass">
-        <p>Forgot Password?</p>
-         </div>
-      </form>
-    </div>
-</div>
-  
+  <div class="credentials">
 
+    <h6>Login</h6>
+    <form [formGroup]="userForm">
+      <div class="input1">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Username</mat-label>
+          <input matInput formControlName="username" placeholder="Enter Username">
+        </mat-form-field>
+
+      </div>
+      <div class="input2">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter Password</mat-label>
+          <input matInput formControlName="password" placeholder="Enter Password" type="password">
+        </mat-form-field>
+      </div>
+
+      <button class="login-button" type="submit" mat-raised-button (click)="authenticate()" routerLinkActivate="active">
+        <span class="login-text">Login</span>
+      </button>
+
+      <div class="password" routerLink="/pass">
+        <p>Forgot Password?</p>
+      </div>
+    </form>
+  </div>
+</div>

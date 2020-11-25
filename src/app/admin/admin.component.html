@@ -6,11 +6,11 @@
   </button>
 
   <div class="details-form">
-    <mat-form-field appearance="outline" style="width: 190px;">
+    <mat-form-field appearance="outline" style="width: 250px;">
       <mat-label>Enter Name </mat-label>
       <input matInput [(ngModel)]="details.name" placeholder="Enter Name" type="text">
     </mat-form-field>
-    <mat-form-field appearance="outline" style="width: 190px;">
+    <mat-form-field appearance="outline" style="width: 250px;">
       <mat-label>Enter Employee ID </mat-label>
       <input matInput [(ngModel)]="details.employeeID" placeholder="Enter Employee ID" type="text">
     </mat-form-field>
@@ -34,7 +34,7 @@
         <div class="name">
           <p>{{details.employeeID}}</p>
         </div>
-        <div class="name">
+        <div class="name" style="width:300px">
           <p>{{details.mailID}}</p>
         </div>
         <button type="button" mat-fab class="fab-button" aria-label="edit icon">

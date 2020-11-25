@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule,  } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -15,26 +15,17 @@ import { Footer1Component } from './footer1/footer1.component';
 import { Details1Component } from './details1/details1.component';
 import { Details2Component } from './details2/details2.component';
 import { PasswordComponent } from './password/password.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AdminComponent } from './admin/admin.component';
 import { Admin2Component } from './admin2/admin2.component';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
-
-
-
-
-
-
-
-
-
 
 
 @NgModule({
@@ -52,11 +43,7 @@ import { AuthGuard } from './auth.guard';
     ChangepasswordComponent,
     AdminComponent,
     Admin2Component,
-    
-    
-    
-    
-   
+
   ],
   imports: [
     BrowserModule,
@@ -72,12 +59,9 @@ import { AuthGuard } from './auth.guard';
     MatDialogModule,
     MaterialFileInputModule,
     ReactiveFormsModule
-    
-    
-    
-  
+
   ],
-  providers: [AuthGuard,AuthService],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -23,7 +23,7 @@ export class HomepageComponent implements OnInit {
       this.router.navigate(['details']);
     }
     else {
-      alert("Invalid credentials!");
+      alert("Login failed: Invalid Username or Password!");
     }
   }
 
