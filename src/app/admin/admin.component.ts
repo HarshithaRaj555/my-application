@@ -14,9 +14,9 @@ export class AdminComponent implements OnInit {
     name: '',
     employeeID: '',
     mailID: ''
-    
+
   };
-  
+
 
   deleteDetails(details: Details): void {
     this.detailsList.forEach((item, index) => {
@@ -24,21 +24,21 @@ export class AdminComponent implements OnInit {
         this.detailsList.splice(index, 1);
       }
     });
-    
+
   }
 
   addDetails(): void {
     const tempDetails: Details = { ...this.details };
     this.detailsList.unshift(tempDetails);
-    
+
   }
 
   constructor(public dialogRef: MatDialogRef<AdminComponent>) { }
 
   ngOnInit(): void {
   }
-     closeDialog() {
-       this.dialogRef.close();
-     }
-     
+  closeDialog() {
+    this.dialogRef.close();
+  }
+
 }

@@ -1,56 +1,58 @@
-<h1>Add/Remove Super Admins</h1>
+<div class="super-admin">
+  <h1>Add/Remove Super Admins</h1>
 
-              
-              
-<div class="details-form">
+  <button mat-icon-button class="close-button" aria-label="Dismiss" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <div class="details-form">
     <mat-form-field appearance="outline" style="width: 190px;">
-        <mat-label>Enter Name </mat-label>
-        <input matInput [(ngModel)]="details.name" placeholder="Enter Name" type="text" >   
-     </mat-form-field>
-     <mat-form-field appearance="outline" style="width: 190px;">
-        <mat-label>Enter Employee ID </mat-label>
-        <input matInput [(ngModel)]="details.employeeID" placeholder="Enter Employee ID" type="text" >   
-     </mat-form-field> 
-     <mat-form-field appearance="outline" style="width: 300px;">
-        <mat-label>Enter Mail ID</mat-label>
-        <input matInput [(ngModel)]="details.mailID" placeholder="Enter Mail ID" type="text" >   
-     </mat-form-field> 
-    
-  
+      <mat-label>Enter Name </mat-label>
+      <input matInput [(ngModel)]="details.name" placeholder="Enter Name" type="text">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 190px;">
+      <mat-label>Enter Employee ID </mat-label>
+      <input matInput [(ngModel)]="details.employeeID" placeholder="Enter Employee ID" type="text">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 300px;">
+      <mat-label>Enter Mail ID</mat-label>
+      <input matInput [(ngModel)]="details.mailID" placeholder="Enter Mail ID" type="text">
+    </mat-form-field>
+
+
     <button class="button" (click)="addDetails()">+</button>
   </div>
   <div class="line"></div>
-  
+
   <div class="details-list">
     <div class="details" *ngFor="let details of detailsList">
-      
+
       <div class="details-description">
         <div class="name">
-            <p>{{details.name}}</p>
-          </div>
-          <div class="name">
-            <p>{{details.employeeID}}</p>
-          </div>
-          <div class="name">
-            <p>{{details.mailID}}</p>
-          </div>
-          <button type="button" mat-fab class="fab-button" aria-label="edit icon">
-            <mat-icon>edit</mat-icon>
-            </button>
-            <button type="button" mat-fab class="fab-button ml-3" (click)="deleteDetails(details)" aria-label="delete icon">
-              <mat-icon>delete</mat-icon>
-            </button>
-          
+          <p>{{details.name}}</p>
+        </div>
+        <div class="name">
+          <p>{{details.employeeID}}</p>
+        </div>
+        <div class="name">
+          <p>{{details.mailID}}</p>
+        </div>
+        <button type="button" mat-fab class="fab-button" aria-label="edit icon">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button type="button" mat-fab class="fab-button ml-3" (click)="deleteDetails(details)" aria-label="delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+
       </div>
     </div>
-  
-  <div mat-dialog-actions>
-    <button class="close" mat-button mat-dialog-title (click)="closeDialog()">X</button>
-  </div> 
-  <button class="update" >
-    Update
-  </button>
-  <button class="cancel" (click)="closeDialog()">
-    Cancel
-  </button>
+
+
+    <button class="update">
+      Update
+    </button>
+    <button class="cancel" (click)="closeDialog()">
+      Cancel
+    </button>
   </div>
+</div>

@@ -17,7 +17,7 @@ export class Admin2Component implements OnInit {
     name: '',
     employeeID: '',
     mailID: ''
-    
+
   };
 
   deleteDetails(details: Details): void {
@@ -26,13 +26,13 @@ export class Admin2Component implements OnInit {
         this.detailsList.splice(index, 1);
       }
     });
-    
+
   }
 
   addDetails(): void {
     const tempDetails: Details = { ...this.details };
     this.detailsList.unshift(tempDetails);
-    
+
   }
 
 

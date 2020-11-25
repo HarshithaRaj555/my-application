@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -7,10 +10,21 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-
-  constructor(public authService : AuthService) { }
+  userForm : FormGroup = new FormGroup({
+    username : new FormControl(''),
+    password : new FormControl(''),
+  })
+  constructor(public authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+  authenticate() : void {
+    if(this.authService.login(this.userForm)) {
+      this.router.navigate(['details']);
+    }
+    else {
+      alert("Invalid credentials!");
+    }
   }
 
 }

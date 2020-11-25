@@ -2,13 +2,13 @@
 <div class="robosoft">
 
     <div class="credentials">
-        
+     
         <h6>Login</h6>
-        <form [formGroup]="authService.form">
+        <form [formGroup]="userForm">
         <div class="input1">
             <mat-form-field appearance="outline">
               <mat-label>Enter Username</mat-label>
-              <input matInput placeholder="Enter Username" name="username" value=""/> 
+              <input matInput formControlName="username" placeholder="Enter Username"> 
               
                 
               </mat-form-field>
@@ -16,16 +16,16 @@
         <div class="input2">
          <mat-form-field appearance="outline">
               <mat-label>Enter Password</mat-label>
-              <input matInput placeholder="Enter Password" name="password" value=""/>
+              <input matInput formControlName="password" placeholder="Enter Password" type="password">
               
          </mat-form-field>
          </div>
       
     
-      
-      <div class="login" routerLink="/details">
-      <img src="../../assets/FAB.png" alt="">
-      </div>
+         <button class="login-button" type="submit" mat-raised-button (click)="authenticate()" routerLinkActivate="active">
+            <span class="login-text">Login</span>
+          </button>
+     
       
          <div class="password" routerLink="/pass">
         <p>Forgot Password?</p>

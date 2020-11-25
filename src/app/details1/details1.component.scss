@@ -1,20 +1,23 @@
 .left-form {
-    height: 490px;
+  height: 490px;
   width: 280px;
   background-color: #FFFFFF;
-    border-radius: 12px;
-    margin: 20px 0 40px 90px;
-    margin-left: 110px;
-    box-shadow: 0 4px 40px 0 rgba(217,39,86,0.08);
-p{
+  border-radius: 12px;
+  margin: 20px 0 40px 90px;
+  margin-left: 110px;
+  box-shadow: 0 4px 40px 0 rgba(217, 39, 86, 0.08);
+
+  p {
     margin-top: 10px;
-}
-.heading {
+  }
+
+  .heading {
     font-size: 24px;
     padding-top: 20px;
     margin-left: 22px;
-}
-.button {
+  }
+
+  .button {
     background-color: #D92756;
     color: white;
     width: 235px;
@@ -25,94 +28,101 @@ p{
     box-shadow: 0 8px 8px -6px palevioletred;
     border: none;
     cursor: pointer;
-    &:focus {
-        outline: none;
-    }
-}
-  
-    
 
-h6{
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+
+  h6 {
     font-size: 14px;
     letter-spacing: 1.25px;
     text-align: center;
-}
-.select {
-    height: 48px;
-  width: 240px;
-  border-radius: 24px;
-  background-color: rgba(217,39,86,0.05);
-  margin-top: 40px;
-  margin-left: 18px;
-  
-  img {
-    margin-top: -4px;
-    margin-left: 40px;
-    float: right;
-    
   }
-  
 
-.button1{
-    opacity: 0.77;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0.15px;
-    text-align: left;
-    padding: 13px 5px 5px 5px;
-    border: none;
-    background-color:#FDF4F6;
-   cursor: pointer; 
+  .select {
+    height: 48px;
+    width: 240px;
     border-radius: 24px;
-    &:focus {
-        outline: none;
-    }
-}
-.button2{
-    font-size: 16px;
-    margin-left: 10px;
+    background-color: rgba(217, 39, 86, 0.05);
     margin-top: 40px;
-    letter-spacing: 0.15px;
-    cursor: pointer;
-    border: none;
-    background-color: #FFFFFF;
-    &:focus {
-        outline: none;
-    }
-}
+    margin-left: 18px;
 
-.button3{
-    font-size: 16px;
-    margin-left: 10px;
-    font-weight: normal;
-    margin-top: 40px;
-    letter-spacing: 0.15px;
-    cursor: pointer;
-    border: none;
-    background-color: #FFFFFF;
-    &:focus {
-        outline: none;
+    img {
+      margin-top: -4px;
+      margin-left: 40px;
+      float: right;
+
     }
 
-    img{
+
+    .button1 {
+      opacity: 0.77;
+      color: #000000;
+      font-size: 16px;
+      letter-spacing: 0.15px;
+      text-align: left;
+      padding: 13px 5px 5px 5px;
+      border: none;
+      background-color: #FDF4F6;
+      cursor: pointer;
+      border-radius: 24px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .button2 {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-top: 40px;
+      letter-spacing: 0.15px;
+      cursor: pointer;
+      border: none;
+      background-color: #FFFFFF;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .button3 {
+      font-size: 16px;
+      margin-left: 10px;
+      font-weight: normal;
+      margin-top: 40px;
+      letter-spacing: 0.15px;
+      cursor: pointer;
+      border: none;
+      background-color: #FFFFFF;
+
+      &:focus {
+        outline: none;
+      }
+
+      img {
         margin-left: 60px;
+      }
     }
-}
 
-.button4{
-    font-size: 16px;
-    margin-left: 10px;
-    margin-top: 40px;
-    letter-spacing: 0.15px;
-    cursor: pointer;
-    border: none;
-    background-color: #FFFFFF;
-     &:focus {
+    .button4 {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-top: 40px;
+      letter-spacing: 0.15px;
+      cursor: pointer;
+      border: none;
+      background-color: #FFFFFF;
+
+      &:focus {
         outline: none;
+      }
     }
-}
 
 
-}
+  }
 
 }

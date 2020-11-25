@@ -1,124 +1,124 @@
 <div class="questionnaire">
-    <h1>Questionnaire</h1>
+  <h1>Questionnaire</h1>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter Title</mat-label>
+    <input matInput placeholder="Enter Title" value="" />
+  </mat-form-field>
+  <p>Please enter appropriate title</p>
+
+  <div class="description">
     <mat-form-field appearance="outline">
-        <mat-label>Enter Title</mat-label>
-        <input matInput placeholder="Enter Title" value=""/>
-        </mat-form-field>
-        <p>Please enter appropriate title</p>
+      <mat-label>Description</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
 
-        <div class="description">
-        <mat-form-field appearance="outline">
-            <mat-label>Description</mat-label>
-            <textarea matInput></textarea>
-            </mat-form-field>
-
-        </div>   
-        <div class="button-title">
-            <mat-form-field appearance="outline">
-                <mat-label>Button-Title</mat-label>
-                <input matInput placeholder="Button Title" name="button" value=""/>
-           </mat-form-field>
-           <mat-form-field appearance="outline">
-            <mat-label>Button-Text</mat-label>
-            <input matInput placeholder="Button Title" name="button" value=""/>
-       </mat-form-field>
-        </div>
-        <div class="check-box">
-            <mat-form-field appearance="outline">
-                <mat-label>Check box text</mat-label>
-                <input matInput placeholder="Check box text" name="check" value=""/>
-           </mat-form-field>
-           </div>
-        <h1>Additional Details</h1>
-        <div class="date">
-            <mat-form-field appearance="outline">
-                <mat-label>Select Start Date</mat-label>
-                <input matInput [matDatepicker]="picker1">
-                                    <mat-datepicker-toggle matSuffix class="icon-pink" [for]="picker1"></mat-datepicker-toggle>
-                                    <mat-datepicker #picker1></mat-datepicker>
-           </mat-form-field>
-           <mat-form-field appearance="outline">
-            <mat-label>Select End Date</mat-label>
-            <input matInput [matDatepicker]="picker2">
-            <mat-datepicker-toggle matSuffix class="icon-pink"  [for]="picker2"></mat-datepicker-toggle>
-            <mat-datepicker #picker2></mat-datepicker>
-       </mat-form-field>
-       <mat-form-field appearance="outline">
-        <mat-label>Auto Reminder</mat-label>
-        <input matInput placeholder="Auto Reminder" type= "number" name="date" value=""/>
-        <div class="days">
-        <input matInput placeholder="Check box text" name="date" value="Days"/>
-        </div>
-   </mat-form-field>
-        </div>
-        <div class="file">
-            <mat-form-field appearance="outline">
-                <mat-label>Select content PPT File</mat-label>
-                <ngx-mat-file-input></ngx-mat-file-input>
-        <mat-icon matSuffix class="icon-color">cloud_upload</mat-icon>
+  </div>
+  <div class="button-title">
+    <mat-form-field appearance="outline">
+      <mat-label>Button-Title</mat-label>
+      <input matInput placeholder="Button Title" name="button" value="" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Button-Text</mat-label>
+      <input matInput placeholder="Button Title" name="button" value="" />
+    </mat-form-field>
+  </div>
+  <div class="check-box">
+    <mat-form-field appearance="outline">
+      <mat-label>Check box text</mat-label>
+      <input matInput placeholder="Check box text" name="check" value="" />
+    </mat-form-field>
+  </div>
+  <h1>Additional Details</h1>
+  <div class="date">
+    <mat-form-field appearance="outline">
+      <mat-label>Select Start Date</mat-label>
+      <input matInput [matDatepicker]="picker1">
+      <mat-datepicker-toggle matSuffix class="icon-pink" [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Select End Date</mat-label>
+      <input matInput [matDatepicker]="picker2">
+      <mat-datepicker-toggle matSuffix class="icon-pink" [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Auto Reminder</mat-label>
+      <input matInput placeholder="Auto Reminder" type="number" name="date" value="" />
+      <div class="days">
+        <input matInput placeholder="Check box text" name="date" value="Days" />
+      </div>
+    </mat-form-field>
+  </div>
+  <div class="file">
+    <mat-form-field appearance="outline">
+      <mat-label>Select content PPT File</mat-label>
+      <ngx-mat-file-input></ngx-mat-file-input>
+      <mat-icon matSuffix class="icon-color">cloud_upload</mat-icon>
 
 
-           </mat-form-field>
-           <mat-form-field appearance="outline">
-            <mat-label>Select participant xl sheet</mat-label>
-            <ngx-mat-file-input></ngx-mat-file-input>
-        <mat-icon matSuffix class="icon-color">cloud_upload</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Select participant xl sheet</mat-label>
+      <ngx-mat-file-input></ngx-mat-file-input>
+      <mat-icon matSuffix class="icon-color">cloud_upload</mat-icon>
 
 
-       </mat-form-field>
-        </div>
-        <div class="mail">
-            <mat-form-field appearance="outline">
-                <mat-label>Mail Body</mat-label>
-                <textarea matInput></textarea>
-           </mat-form-field>
-           </div>
-           <div class="rectangle">
-           </div>
-             <div class="options">
-                  <button class="box">
-                    <img src="../../assets/ic_save.png" alt="">  
-                    <h6>SAVE</h6>
-                  </button>
-                  <button class="box1">
-                    <img src="../../assets/ic_preview.png" alt="">  
-                    <h6>PREVIEW</h6>
-                  </button>
-                  <button class="box2">
-                    <img src="../../assets/ic_publish.png" alt="">  
-                    <h6>PUBLISH</h6>
-                  </button>
-                  <button class="box3">
-                    <img src="../../assets/ic_reminder.png" alt="">  
-                    <h6>REMIND</h6>
-                  </button>
-                  <button class="box4">
-                    <img src="../../assets/ic_report.png" alt="">  
-                    <h6>GENRATE REPORT</h6>
-                  </button>
-              </div>  
-              
-              <div class="toggle-options-container">
-                <span class="toggle-options" [hidden]="!overlay">
-                    <div routerLink="/change-password" class="display">
-                        Change Password
-                    </div>
-                    
-                        
-                        <div class="display1">
-                        <button mat-raised-button (click)="openDialog()">Add/Remove Super Admins</button>
-                        </div>
-                    
-                        <div class="display1">
-                          <button mat-raised-button (click)="openDialog1()">Add/Remove Admins</button>
-                          </div>
-                </span>
-                <div class="fab-button-container p-4" (click)="toggleOverlayMode()">
-                    <button mat-fab class="fab-button" aria-label="Example icon button with a delete icon">
-                        <mat-icon>{{ closeIcon }}</mat-icon>
-                    </button>
-                </div>
-            </div>
-            <div class="overlay" [hidden]="!overlay"></div>  
-            
- </div>
+    </mat-form-field>
+  </div>
+  <div class="mail">
+    <mat-form-field appearance="outline">
+      <mat-label>Mail Body</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+  </div>
+  <div class="rectangle">
+  </div>
+  <div class="options">
+    <button class="box">
+      <img src="../../assets/ic_save.png" alt="">
+      <h6>SAVE</h6>
+    </button>
+    <button class="box1">
+      <img src="../../assets/ic_preview.png" alt="">
+      <h6>PREVIEW</h6>
+    </button>
+    <button class="box2">
+      <img src="../../assets/ic_publish.png" alt="">
+      <h6>PUBLISH</h6>
+    </button>
+    <button class="box3">
+      <img src="../../assets/ic_reminder.png" alt="">
+      <h6>REMIND</h6>
+    </button>
+    <button class="box4">
+      <img src="../../assets/ic_report.png" alt="">
+      <h6>GENRATE REPORT</h6>
+    </button>
+  </div>
+
+  <div class="toggle-options-container">
+    <span class="toggle-options" [hidden]="!overlay">
+      <div routerLink="/change-password" class="display">
+        Change Password
+      </div>
+
+
+      <div class="display1">
+        <button mat-raised-button (click)="openDialog()">Add/Remove Super Admins</button>
+      </div>
+
+      <div class="display1">
+        <button mat-raised-button (click)="openDialog1()">Add/Remove Admins</button>
+      </div>
+    </span>
+    <div class="fab-button-container p-4" (click)="toggleOverlayMode()">
+      <button mat-fab class="fab-button" aria-label="Example icon button with a delete icon">
+        <mat-icon>{{ closeIcon }}</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="overlay" [hidden]="!overlay"></div>
+
+</div>

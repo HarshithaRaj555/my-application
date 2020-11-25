@@ -14,18 +14,18 @@ export class Details2Component implements OnInit {
   overlay = false;
   toggleOverlayMode = () => {
     this.overlay = !this.overlay;
-    this.closeIcon = this.closeIcon === "add"? "close" : "add";
+    this.closeIcon = this.closeIcon === "add" ? "close" : "add";
   }
 
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
-  openDialog(){
+  openDialog() {
     this.dialog.open(AdminComponent);
-    
+
   }
-  openDialog1(){
+  openDialog1() {
     this.dialog.open(Admin2Component);
   }
 

@@ -24,8 +24,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AdminComponent } from './admin/admin.component';
 import { Admin2Component } from './admin2/admin2.component';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
-import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
+import { AuthGuard } from './auth.guard';
+
+
 
 
 
