@@ -17,11 +17,13 @@
           <input matInput formControlName="password" placeholder="Enter Password" type="password">
         </mat-form-field>
       </div>
-
+      <div class="error">
+      {{errorMessage}}
+      </div>
       <button class="login-button" type="submit" mat-raised-button (click)="authenticate()" routerLinkActivate="active">
         <span class="login-text">Login</span>
       </button>
-
+  
       <div class="password" routerLink="/pass">
         <p>Forgot Password?</p>
       </div>

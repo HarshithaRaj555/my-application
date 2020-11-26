@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Details } from '../admin/Details';
+
 import { DETAILS } from '../admin/Detailslist';
+
 import { DetailspageComponent } from '../detailspage/detailspage.component';
 
 @Component({

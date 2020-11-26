@@ -21,11 +21,12 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
-import { AdminComponent } from './admin/admin.component';
+
 import { Admin2Component } from './admin2/admin2.component';
 import { MaterialFileInputModule } from 'ngx-material-file-input';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth.guard';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({

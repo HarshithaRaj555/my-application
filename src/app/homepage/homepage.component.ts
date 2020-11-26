@@ -14,6 +14,9 @@ export class HomepageComponent implements OnInit {
     username : new FormControl(''),
     password : new FormControl(''),
   })
+
+  errorMessage: string;
+
   constructor(public authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
@@ -23,7 +26,7 @@ export class HomepageComponent implements OnInit {
       this.router.navigate(['details']);
     }
     else {
-      alert("Login failed: Invalid Username or Password!");
+      this.errorMessage='Login failed: Invalid Username or Password!';
     }
   }
 

@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 .questionnaire {
   height: 886px;
   width: 900px;
@@ -10,7 +12,7 @@
     height: 380px;
     width: 2px;
     border-radius: 1px;
-    background-color: #D92756;
+    background-color: $basic;
     margin-left: 645px;
     margin-top: -835px;
   }
@@ -105,7 +107,7 @@
       margin-top: -12px;
 
       .icon-pink {
-        color: #D92756;
+        color: $basic;
         cursor: pointer;
       }
 
@@ -147,7 +149,7 @@
     }
 
     .icon-color {
-      color: #D92756;
+      color: $basic;
       cursor: pointer;
     }
 
@@ -183,7 +185,7 @@
 
       margin-right: -2px;
       margin-top: -21px;
-      color: #D92756;
+      color: $basic;
       font-size: 14px;
       font-weight: 500;
       letter-spacing: 1.25px;
@@ -200,9 +202,7 @@
       border: none;
       cursor: pointer;
 
-      &:focus {
-        outline: none;
-      }
+      @include focus;
 
       h6 {
         margin-right: 62px;
@@ -221,9 +221,7 @@
       border: none;
       cursor: pointer;
 
-      &:focus {
-        outline: none;
-      }
+     @include focus;
 
       h6 {
         margin-right: 32px;
@@ -244,9 +242,7 @@
       border: none;
       cursor: pointer;
 
-      &:focus {
-        outline: none;
-      }
+      @include focus;
 
       h6 {
         margin-right: 40px;
@@ -267,9 +263,7 @@
       border: none;
       cursor: pointer;
 
-      &:focus {
-        outline: none;
-      }
+      @include focus;
 
       h6 {
         margin-right: 40px;
@@ -290,9 +284,7 @@
       border: none;
       cursor: pointer;
 
-      &:focus {
-        outline: none;
-      }
+      @include focus;
 
       h6 {
         margin-left: 40px;
@@ -317,12 +309,10 @@
     margin-top: 380px;
 
     .fab-button {
-      background-color: #D92756;
+      background-color: $basic;
       box-shadow: 2px 2px 8px palevioletred;
 
-      &:focus {
-        outline: none;
-      }
+     @include focus;
     }
 
 
@@ -347,7 +337,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #D92756;
+      color: $basic;
       font-family: Roboto;
       font-size: 11px;
       font-weight: 500;
@@ -370,7 +360,6 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  ;
   z-index: 1;
   cursor: pointer;
 }
@@ -388,7 +377,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #D92756;
+    color: $basic;
     font-family: Roboto;
     font-size: 11px;
     font-weight: 500;

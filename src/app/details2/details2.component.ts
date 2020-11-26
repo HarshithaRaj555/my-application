@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AdminComponent } from '../admin/admin.component';
+
 import { Admin2Component } from '../admin2/admin2.component';
 
 

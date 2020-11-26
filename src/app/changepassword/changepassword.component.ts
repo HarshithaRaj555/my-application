@@ -9,6 +9,9 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./changepassword.component.scss']
 })
 export class ChangepasswordComponent implements OnInit {
+  
+ 
+  
 
   constructor(public Service: AuthService, private router: Router) { }
   changepassword: FormGroup = new FormGroup({
@@ -20,11 +23,11 @@ export class ChangepasswordComponent implements OnInit {
   }
   verifypassword() {
     if (this.changepassword.value.newPassword == this.changepassword.value.reEnterPassword) {
-      alert("Password successfully changed!!");
+     alert("Password successfully changed!");
       this.router.navigate(['home']);
     } else {
-      alert("Passwords do not match!!");
-      this.router.navigate(['change-password'])
+     alert("Passwords do not match!");
+      this.router.navigate(['change-password']);
     }
   }
 

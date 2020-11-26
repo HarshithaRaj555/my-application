@@ -1,0 +1,7 @@
+$basic:#D92756;
+
+@mixin focus{
+    &:focus {
+        outline: none;
+      }
+}
